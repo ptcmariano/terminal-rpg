@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal RPG</title>
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+    <style>
+        :root {
+          --global-font-size: 15px;
+          --global-line-height: 1.4em;
+          --global-space: 10px;
+          --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+            serif;
+          --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+            serif;
+          --background-color: #222225;
+          --page-width: 60em;
+          --font-color: #e8e9ed;
+          --invert-font-color: #222225;
+          --secondary-color: #a3abba;
+          --tertiary-color: #a3abba;
+          --primary-color: #62c4ff;
+          --error-color: #ff3c74;
+          --progress-bar-background: #3f3f44;
+          --progress-bar-fill: #62c4ff;
+          --code-bg-color: #3f3f44;
+          --input-style: solid;
+          --display-h1-decoration: none;
+        }
+    </style>
+</head>
+<body class="terminal">
+    <div class="container">
+        <section>
+            <header><h2 id="Timeline">Bem vindo</h2></header>
+            <div class="terminal-timeline">
+                <div class="terminal-card">
+                    <header>Você vai experimentar um novo jogo para aprendizado</header>
+                    <div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas
+                    ex vero enim in doloribus officiis ullam vel nam esse sapiente velit
+                    incidunt. Eaque quod et, aut maiores excepturi sint.
+                    </div>
+                </div>
+                <div class="terminal-card">
+                    <header>Siga as pistas e enfrente o que vier para conquistar</header>
+                    <div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas
+                    ex vero enim in doloribus officiis ullam vel nam esse sapiente velit
+                    incidunt. Eaque quod et, aut maiores excepturi sint.
+                    </div>
+                </div>
+            </div>
+            <br />
+        </section>
+        
+        <button class="btn btn-primary" onclick="terminalCards()">Continuar</button><br /><br />
+    </div>
+    <script src="./terminal.js"></script>
+</body>
+</html>
