@@ -1,18 +1,22 @@
+var sequencia = [
+    'florest1.png',
+    'florest2.png',
+    'florest3.png',
+    'florest4.png',
+    'temple1.png',
+    'temple2.png',
+    'temple3.png',
+    'temple4.png',
+    'temple5.png',
+    'temple6.png',
+    'temple7.png',
+    'temple8.png',
+];
+var posicaoAtual = 0;
 function terminalCards() {
-    const cards = document.querySelectorAll('.terminal-card')
-    fetch('https://baconipsum.com/api/?type=all-meat&sentences=4&start-with-lorem=2')
-    .then(function(response) {
-        if (!response.ok) {
-          throw new Error("HTTP error, status = " + response.status);
-        }
-        return response.json();
-    })
-    .then(function(data) {
-        cards.forEach(item => {
-            item.innerHTML = `
-            <header>Siga as pistas e enfrente o que vier para conquistar</header>
-            <div>${data}</div>
-            `
-        })
-    })
+    const cenario = document.getElementById('cenario')
+    cenario.src = `./img/${sequencia[posicaoAtual]}`
+    cenario.alt = `${sequencia[posicaoAtual]}`
+    posicaoAtual++
+    posicaoAtual = posicaoAtual >= sequencia.length ? 0 : posicaoAtual
 }
